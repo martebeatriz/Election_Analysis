@@ -1,48 +1,46 @@
-# Election_Analysis
+# Analysis of Election Audit 
+## Overview of Election Audit: 
+The election commission has requested the following additional data to complete the audit:
+- The voter turnout for each county
+- The percentage of votes from each county out of the total count
+- The county with the highest turnout
 
-## Project Overview 
-The Colorado Board of Elections requested an audit of a recent local congressional election.
+## Election-Audit Results: 
+### Total votes cast: 369,711
+### Breakdown by county:
+Jefferson County: 
+- Votes cast: 38,855
+- Percentage of total votes cast: 10.5%
 
-The following tasks needed to be completed:
+Denver County:
+- Votes cast: 306,055
+- Percentage of total votes cast: 82.8%
 
-- Total number of votes cast <br/>
-- A complete list of candidates who received votes <br/>
-- Total number of votes each candidate received <br/>
-- Percentage of votes each candidate won <br/>
-- The winner of the election based on popular vote <br/>
+Arapahoe County:
+- Votes cast: 24,801
+- Percentage of total votes cast: 6.7%
 
-## Resources 
-Data Source: election_results.csv <br/>
-Software: Python 3.6.1, Visual Studio Code, 1.38.1
+### Largest County Turnout: Denver 
 
-## Summary 
+### Breakdown of votes received by each candidate 
+- Charles Casper Stockham: 23.0% (85,213 votes)
+- Diana DeGette: 73.8% (272,892 votes)
+- Raymon Anthony Doane: 3.1% (11,606 votes)
 
-The analysis of the election show that:
+### Winner:
+Diana DeGette </br>
+272,892 Votes </br>
+73.8% of Total Votes </br>
 
-There were 369,711 votes cast in the election. 
-
-The candidates were: 
-- Charles Casper <br/>
-- Diana DeGette <br/>
-- Raymon Anthony Doane <br/>
-
-The candidate results were:
-- Charles Casper Stockham received 23.0% of the vote and 85,213 number of votes. 
-- Diana DeGette received 73.8% of the vote and 272,892 number of votes. 
-- Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes. 
+<img width="402" alt="election_analysis screenshot" src="https://user-images.githubusercontent.com/107375554/177226688-ac334cf9-56d6-42f7-8815-8f30b93089eb.png">
 
 
-The winner of the election was:
-- Diana DeGette who received 73.8% of the vote and 272,892 number of votes. 
+## Election-Audit Summary: 
+This script is highly adaptive. The variables "candidate_name" is assigned to the 3rd column of this specific data which lists all the candidates. The variable "county_name" is assigned to the 2nd column of this data which lists the county names. If a difference data source is to be analyzed, the indexes of those two variables can be changed to align with the new data's columns.   
 
-## Challenge Overview 
-I came into this bootcamp with a little bit of knowledge on Java Script. In one way, I was grateful because it made me familiar with loops, if statements, and indexes. However, the way the variables are called and defined are different and sometimes backwards. It took some time and effort to get used to that. 
+As long as the correct columns are correctly identified in the data, the script will be able to return the candidate names, county names, and their respective votes and percentages of votes.
 
-Using Visual Studio Code was a challenge in it of itself as well. Watching the professors it during the live class helped. Also, many thanks to the TA’s who walked me through the program. 
+Most importantly, the user would also need to change the “file_to_load” and “file_to_save“ variables so that the data used will be properly identified and so that a new text file is created and to hold the new data. 
 
-Overall, even though this challenge had it’s ups and down but I feel like I got a good grasp on it in the end. 
 
-## Summary 
-The analysis provided is quite succinct. We got a look at all the candidates, their votes, their percentage of the total votes, and a specified overview of the winner’s vote count.
- 
-Although more data can be provided, it is not necessary. 
+
